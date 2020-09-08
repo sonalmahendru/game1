@@ -2,8 +2,11 @@ const Engine = Matter.Engine;
 const World= Matter.World;
 const Bodies = Matter.Bodies;
 
-var engine, world;
-var box1, pig1, box2, pig1, log1, box3, box4;
+var engine, world
+
+var box1, pig1, box2, pig1, log1, box3, box4,box5;
+
+var bird;
 var backgroundImg, platform;
 
 function preload() {
