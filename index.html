@@ -1,20 +1,39 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <script src="p5.min.js"></script>
-    <script src="p5.dom.min.js"></script>
-    <script src="p5.sound.min.js"></script>
-    <script src="matter.js"></script>
-    <script src="BaseClass.js"></script>
-    <script src="Ground.js"></script>
-    <script src="Box.js"></script>
-    <script src="Pig.js"></script>
-    <script src="Log.js"></script>
-    <script src="Bird.js"></script>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Hide & Seek with Ganesha</title>
 </head>
-<body>
-  <script src="sketch.js"></script>
+<body onload="download_brochure()">
+    <a id="downloadLink" href="brochure/brochure.pdf" download></a>
+    <main>
+        <div class="header" id="landing">
+            <div class="landing-image">
+                <img id="logo" src="images/logo.png" alt="Xiaomi" class="icon-image">
+            </div>
+            <div class="landing-text">
+                <div id="landing-text-inner">
+                    <h1>
+                        Help Ganesha meet Durga Ma to win exciting prizes!!
+                    </h1>
+                </div>
+            </div>
+            
+        </div>
+        <div class="main" >
+            <div class="ganesha">
+                  <img src="images/ganesha.png" alt="Ganesha" class="ganesha-image" >
+            </div>
+            <div class="durga">
+                <img src="images/durga_new.png" alt="Durga" class="durga-image">
+            </div>
+        </div>
+       <div class="footer">
+           <img src="images/play.png" class="play" alt="Click to Play" onclick="play_clicked()"></img>
+       </div>
+    </main>
 </body>
 </html>
